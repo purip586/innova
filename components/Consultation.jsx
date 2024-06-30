@@ -1,8 +1,13 @@
 "use client";
-
-import React, { useState } from "react";
+import { useInView } from "react-intersection-observer";
+import { useState } from "react";
 
 const Consultation = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
+
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
 
@@ -13,8 +18,15 @@ const Consultation = () => {
   };
 
   return (
-    <div className="text-[#e0e0e0] px-6 pt-16 md:px-28 text-center">
-      <h2 className="text-3xl pt-28 pb-16">Free IT Consultation for your Business</h2>
+    <div
+      ref={ref}
+      className={`text-[#e0e0e0] text-center px-6 py-28 md:px-28 fade-up ${
+        inView ? "fade-up-active" : ""
+      }`}
+    >
+      <h2 className="text-3xl pt-28 pb-16">
+        Free IT Consultation for your Business
+      </h2>
 
       {!subscribed ? (
         <div>

@@ -1,6 +1,5 @@
 import Consultation from "@/components/Consultation";
 import Hero from "@/components/Hero";
-import Internship from "@/components/Internship";
 import Navbar from "@/components/Navbar";
 import Service from "@/components/Service";
 
@@ -11,7 +10,6 @@ export default function Home() {
       <Hero />
       <Service />
       <Consultation />
-      <Internship />
     </div>
   );
 }

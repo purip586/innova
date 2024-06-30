@@ -64,7 +64,7 @@ const Service = () => {
       subServices: ["PPC Campaigns", "Email Marketing", "Affiliate Marketing"],
     },
     {
-      title: "Cloud Service, Management & DevOps",
+      title: "Cloud Service, Management & DevOps (AWS)",
       description: "Managing cloud services and providing DevOps solutions.",
       subServices: ["Cloud Management", "DevOps Automation"],
     },
