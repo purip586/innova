@@ -76,7 +76,7 @@ const Service = () => {
     {
       title: "Other Services",
       description: "",
-      subServices: ["IT Consulting", "Outsourcing", "Internship"]
+      subServices: ["IT Consulting", "IT Outsourcing", "Internship"]
     },
   ];
 
