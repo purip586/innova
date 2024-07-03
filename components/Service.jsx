@@ -12,66 +12,71 @@ const Service = () => {
       title: "Website Management",
       description:
         "Comprehensive management of your website to ensure it runs smoothly and efficiently.",
-      subServices: ["Content Management & Updates", "Maintenance & Error Fixing"],
-    },
-    {
-      title: "Softwares",
-      description: "Custom software solutions tailored to your business needs.",
-      subServices: ["Enterprise Solutions", "Automation Tools"],
-    },
-    {
-      title: "Mobile Apps",
-      description:
-        "Development of user-friendly mobile applications for iOS and Android.",
-      subServices: ["Native Apps", "Hybrid Apps"],
-    },
-    {
-      title: "Web Apps",
-      description: "Creating interactive and responsive web applications.",
-      subServices: ["Progressive Web Apps (PWAs)", "Single Page Applications (SPAs)"],
-    },
-    {
-      title: "Branding & Content Creation",
-      description: "Building a strong brand identity with compelling content.",
-      subServices: ["Logo Design", "Copywriting", "Photography"],
-    },
-    {
-      title: "Creative Designing",
-      description:
-        "Innovative and aesthetic designs for all your business needs.",
-      subServices: ["Graphic Design", "UI/UX Design"],
-    },
-    {
-      title: "Social Media Management",
-      description: "Effective management of your social media presence.",
       subServices: [
-        "Content Scheduling",
-        "Content Management",
-        "Engagement & Growth",
-        "Social Media Marketing (SMM)",
+        "Complete Package of Website Services",
+        "Web Design & Development",
+        "Content Management & Updates",
+        "Maintenance & Error Fixing",
+        "Web Apps Development",
+        "Landing Pages & Promotions",
+        "Domain & Hosting Management",
       ],
     },
     {
-      title: "SEO",
+      title: "Digital Marketing & SEO",
       description:
-        "Optimizing your website to rank higher in search engine results.",
-      subServices: ["On-Page SEO", "Off-Page SEO", "Technical SEO", "Local SEO"],
+        "Strategies to boost your online presence and drive traffic. We optimize your website to rank higher in search engine results.",
+      subServices: [
+        "Email Marketing",
+        "Google My Business Setup",
+        "Local SEO & Google Map Setup",
+        "Content Management",
+        "Social Media Marketing (SMM)",
+        "Social Media Management",
+        "Google Ads Management",
+        "Facebook Ads Management",
+        "Effective management of your social media presence",
+      ],
     },
     {
-      title: "Digital Marketing",
+      title: "Softwares & APPS",
       description:
-        "Strategies to boost your online presence and drive traffic.",
-      subServices: ["PPC Campaigns", "Email Marketing", "Affiliate Marketing"],
+        "Custom software solutions tailored to your business needs. We develop user-friendly mobile applications for iOS and Android and create interactive and responsive web applications.",
+      subServices: [
+        "Enterprise Solutions",
+        "E-commerce",
+        "Retail Store POS",
+        "Database Scraping software",
+        "ERP",
+        "Accounting",
+        "Employee Management",
+        "Hospital, Clinic, Pharmacy Management",
+        "Hotel Management",
+        "Mobile Apps",
+        "Web Apps",
+      ],
     },
     {
-      title: "Cloud Service, Management & DevOps (AWS)",
-      description: "Managing cloud services and providing DevOps solutions.",
-      subServices: ["Cloud Management", "DevOps Automation"],
+      title: "Branding & Content Creation",
+      description:
+        "Building a strong brand identity with compelling content. We provide innovative and aesthetic designs for all your business needs.",
+      subServices: [
+        "Logo Design",
+        "Content Writing",
+        "Creative Designing",
+        "UI/UX Design",
+      ],
     },
     {
-      title: "IT Services Export",
-      description: "Delivering IT services to international clients.",
-      subServices: ["Consulting", "Outsourcing"],
+      title: "Cloud Services, Management & DevOps (AWS)",
+      description:
+        "Managing cloud services and providing DevOps solutions to efficiently run your online businesses and web apps on the cloud, with Continuous integration and continuous delivery system.",
+      subServices: ["Cloud Hosting & Management", "CI/CD DevOps Automation"],
+    },
+    {
+      title: "Other Services",
+      description: "",
+      subServices: ["IT Consulting", "Outsourcing", "Internship"]
     },
   ];
 
@@ -90,7 +95,8 @@ const Service = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="p-6 rounded-lg transform transition-transform hover:-translate-y-3 duration-300" style={{ boxShadow: '1px 3px 5px rgba(255, 255, 255, 0.3)' }}
+            className="p-6 rounded-lg transform transition-transform hover:-translate-y-3 duration-300"
+            style={{ boxShadow: "1px 3px 5px rgba(255, 255, 255, 0.3)" }}
           >
             <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
             <p className="mb-4">{service.description}</p>
