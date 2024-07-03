@@ -43,7 +43,6 @@ const Service = () => {
       description:
         "Custom software solutions tailored to your business needs. We develop user-friendly mobile applications for iOS and Android and create interactive and responsive web applications.",
       subServices: [
-        "Enterprise Solutions",
         "E-commerce",
         "Retail Store POS",
         "Database Scraping software",
@@ -52,6 +51,8 @@ const Service = () => {
         "Employee Management",
         "Hospital, Clinic, Pharmacy Management",
         "Hotel Management",
+        "School Management",
+        "Travels, Tours & Booking",
         "Mobile Apps",
         "Web Apps",
       ],
